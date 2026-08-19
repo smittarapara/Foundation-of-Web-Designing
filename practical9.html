@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tables - Timetable and Product Catalog</title>
+</head>
+
+<body>
+
+    <h1>HTML Tables</h1>
+
+    <p>
+        This webpage demonstrates the use of HTML tables
+        with captions, headers, rowspan, colspan, and merged cells.
+    </p>
+
+    <hr>
+
+    <!-- ================= TIMETABLE ================= -->
+
+    <h2>Class Timetable</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <caption>
+            <b>B.Sc. Data Science - Semester 1 Timetable</b>
+        </caption>
+
+        <!-- Table Header -->
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2"><b>Monday</b></td>
+            <td>Python</td>
+            <td>Mathematics</td>
+            <td>Web Technology</td>
+            <td rowspan="2">Lunch Break</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Data Science Lab</td>
+            <td>Statistics</td>
+        </tr>
+
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td>Statistics</td>
+            <td>Python</td>
+            <td colspan="2">Data Science Lab</td>
+        </tr>
+
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td>Web Technology</td>
+            <td>Mathematics</td>
+            <td>Python</td>
+            <td>Statistics</td>
+        </tr>
+
+        <tr>
+            <td><b>Thursday</b></td>
+            <td colspan="3">Web Technology Practical</td>
+            <td>Library</td>
+        </tr>
+
+    </table>
+
+
+    <hr>
+
+
+    <!-- ================= PRODUCT CATALOG ================= -->
+
+    <h2>Product Catalog</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <caption>
+            <b>Computer Accessories Product Catalog</b>
+        </caption>
+
+        <!-- Table Header -->
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>P001</td>
+            <td>Wireless Mouse</td>
+            <td>Accessories</td>
+            <td>₹599</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>P002</td>
+            <td>Keyboard</td>
+            <td>Accessories</td>
+            <td>₹899</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">P003</td>
+            <td rowspan="2">Laptop</td>
+            <td>Electronics</td>
+            <td>₹55,000</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Computers</td>
+            <td>₹65,000</td>
+            <td>Limited</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><b>Total Products</b></td>
+            <td colspan="2"><b>3 Products</b></td>
+        </tr>
+
+    </table>
+
+
+    <hr>
+
+
+    <!-- ================= MERGED CELLS EXAMPLE ================= -->
+
+    <h2>Merged Cells Example</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <caption>
+            <b>Student Performance</b>
+        </caption>
+
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th colspan="3">Marks</th>
+        </tr>
+
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>Python</th>
+        </tr>
+
+        <tr>
+            <td>Student 1</td>
+            <td>85</td>
+            <td>80</td>
+            <td>90</td>
+        </tr>
+
+        <tr>
+            <td>Student 2</td>
+            <td>78</td>
+            <td>88</td>
+            <td>82</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
