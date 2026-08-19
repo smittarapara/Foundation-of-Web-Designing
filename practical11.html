@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Box Model, Display and Position</title>
+</head>
+
+<body style="
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial;
+">
+
+    <!-- Header -->
+    <header style="
+        background-color: darkblue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    ">
+
+        <h1 style="margin: 0;">
+            B.Sc. Data Science
+        </h1>
+
+        <p style="margin: 8px;">
+            CSS Layout Demonstration
+        </p>
+
+    </header>
+
+
+    <!-- Navigation using display property -->
+    <nav style="
+        background-color: #333;
+        text-align: center;
+        padding: 12px;
+    ">
+
+        <a href="#" style="
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        ">
+            Home
+        </a>
+
+        <a href="#" style="
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        ">
+            Courses
+        </a>
+
+        <a href="#" style="
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        ">
+            About
+        </a>
+
+        <a href="#" style="
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        ">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <!-- Main Container -->
+    <main style="
+        width: 85%;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        border: 2px solid #ccc;
+        box-sizing: border-box;
+    ">
+
+        <h2 style="
+            color: darkblue;
+            text-align: center;
+        ">
+            CSS Box Model
+        </h2>
+
+        <p style="text-align: center;">
+            The CSS Box Model consists of Content, Padding,
+            Border and Margin.
+        </p>
+
+
+        <!-- Box Model Demonstration -->
+        <div style="
+            width: 300px;
+            margin: 30px auto;
+            padding: 25px;
+            border: 5px solid darkblue;
+            background-color: lightblue;
+            text-align: center;
+            box-sizing: content-box;
+        ">
+
+            <div style="
+                background-color: white;
+                padding: 20px;
+            ">
+
+                <b>Content Area</b>
+                <br>
+                300px wide
+
+            </div>
+
+        </div>
+
+
+        <h2 style="
+            color: darkblue;
+            text-align: center;
+        ">
+            Display Properties
+        </h2>
+
+
+        <!-- Display Block -->
+        <div style="
+            display: block;
+            background-color: lightgreen;
+            padding: 15px;
+            margin: 10px;
+            border: 2px solid green;
+        ">
+            Display: Block
+        </div>
+
+
+        <!-- Display Inline -->
+        <div style="text-align: center;">
+
+            <span style="
+                display: inline;
+                background-color: lightyellow;
+                padding: 10px;
+                border: 2px solid orange;
+            ">
+                Display: Inline
+            </span>
+
+            <span style="
+                display: inline;
+                background-color: lightpink;
+                padding: 10px;
+                border: 2px solid red;
+            ">
+                Another Inline Element
+            </span>
+
+        </div>
+
+
+        <!-- Display Inline Block -->
+        <div style="
+            text-align: center;
+            margin-top: 30px;
+        ">
+
+            <div style="
+                display: inline-block;
+                width: 180px;
+                padding: 20px;
+                margin: 10px;
+                background-color: #e6f2ff;
+                border: 2px solid blue;
+                text-align: center;
+            ">
+                Box 1
+            </div>
+
+            <div style="
+                display: inline-block;
+                width: 180px;
+                padding: 20px;
+                margin: 10px;
+                background-color: #e6ffe6;
+                border: 2px solid green;
+                text-align: center;
+            ">
+                Box 2
+            </div>
+
+        </div>
+
+
+        <h2 style="
+            color: darkblue;
+            text-align: center;
+            margin-top: 40px;
+        ">
+            CSS Position Properties
+        </h2>
+
+
+        <!-- Relative Position -->
+        <div style="
+            position: relative;
+            width: 300px;
+            height: 150px;
+            margin: 30px auto;
+            background-color: #eeeeee;
+            border: 2px solid #555;
+        ">
+
+            <div style="
+                position: relative;
+                top: 30px;
+                left: 40px;
+                width: 150px;
+                padding: 15px;
+                background-color: lightblue;
+                border: 2px solid darkblue;
+            ">
+                Position: Relative
+            </div>
+
+        </div>
+
+
+        <!-- Absolute Position -->
+        <div style="
+            position: relative;
+            width: 400px;
+            height: 180px;
+            margin: 30px auto;
+            background-color: #fff3cd;
+            border: 2px solid orange;
+        ">
+
+            <div style="
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding: 15px;
+                background-color: orange;
+                color: white;
+            ">
+                Position: Absolute
+            </div>
+
+            <p style="padding: 20px;">
+                The absolute element is positioned
+                relative to this container.
+            </p>
+
+        </div>
+
+
+        <!-- Fixed Position -->
+        <div style="
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: darkblue;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        ">
+            Fixed Position
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer style="
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    ">
+
+        © 2026 B.Sc. Data Science - Web Technologies
+
+    </footer>
+
+</body>
+
+</html>
